@@ -1,6 +1,6 @@
 CIFAR10 Image Classification using Custom CNN in Pytorch Lightning
 
-Summary
+### Summary
 
 This project is an image classification project. Dataset used for training is CIFAR10. Model used for traning is Custom CNN model. Albumentation is used for image transformation. One Cycle LR policy is used for best LR range.
 
@@ -8,19 +8,19 @@ Model is trained for 25 epochs, with batch size of 512. For Identifying reasons 
 
 File Structure
 
-S12.ipynb :
+### S12.ipynb :
 
 is the file where all of the defined implementations are fetched and used. EG: Testing train/test data loader, Visualising sample images and effect of transformations, Use of LR finder to find max best LR, Running Training pipeline, Visualising Model performance graphs/ Incorrect Predicted images, Grad-CAM heatmap on Incorrect predictions etc...
 
-models :
+### models :
 
 This is the directory where models are stored. It currently includes resnet18.py and lit_custom_resnet.py files.
 
-dataset.py :
+### dataset.py :
 
 Dataset class is definrd in this.
 
-main.py : ***
+### main.py : ***
 
 Some of the important functions are defined in this file.
 
@@ -36,7 +36,7 @@ Some of the important functions are defined in this file.
 
 ** Incase of Lightning Model most of these are implemneted in model class.
 
-utils.py :
+### utils.py :
 
 Utitlity functions are kept in this file
 
@@ -56,3 +56,10 @@ Utitlity functions are kept in this file
 visualise.py :
 
 In this file all visualisation functions of the project are kept. Eg: plotting Grad-CAM, Showing Image samples etc..
+
+# Loss Function Graph:
+![Accuracy Plot](images/accuracy.png)
+![Loss Plot](images/loss.png)
+
+# Incorrect Preds with GradCAMS
+![Incorrect Preds](images/incorrect_preds.png)
